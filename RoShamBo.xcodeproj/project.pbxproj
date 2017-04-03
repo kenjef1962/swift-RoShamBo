@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700ACA1C1E65164100C40973 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700ACA1B1E65164100C40973 /* Enumerations.swift */; };
+		700ACA1E1E65166A00C40973 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700ACA1D1E65166A00C40973 /* MainViewPresenter.swift */; };
+		700ACA201E65196F00C40973 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700ACA1F1E65196F00C40973 /* HistoryItem.swift */; };
+		700ACA221E6526EB00C40973 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700ACA211E6526EB00C40973 /* UIImageView+.swift */; };
 		709512A41E53FD0C005C2234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709512A31E53FD0C005C2234 /* AppDelegate.swift */; };
-		709512A61E53FD0C005C2234 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709512A51E53FD0C005C2234 /* ViewController.swift */; };
+		709512A61E53FD0C005C2234 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709512A51E53FD0C005C2234 /* MainViewController.swift */; };
 		709512A91E53FD0C005C2234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709512A71E53FD0C005C2234 /* Main.storyboard */; };
-		709512AB1E53FD0C005C2234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709512AA1E53FD0C005C2234 /* Assets.xcassets */; };
 		709512AE1E53FD0C005C2234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709512AC1E53FD0C005C2234 /* LaunchScreen.storyboard */; };
-		709512B91E53FD0C005C2234 /* Rock_Paper_ScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709512B81E53FD0C005C2234 /* Rock_Paper_ScissorsTests.swift */; };
-		709512C41E53FD0C005C2234 /* Rock_Paper_ScissorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709512C31E53FD0C005C2234 /* Rock_Paper_ScissorsUITests.swift */; };
+		709512B91E53FD0C005C2234 /* RoShamBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709512B81E53FD0C005C2234 /* RoShamBoTests.swift */; };
+		709512C41E53FD0C005C2234 /* RoShamBoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709512C31E53FD0C005C2234 /* RoShamBoUITests.swift */; };
+		70A10F501E653C1700F963B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A10F4F1E653C1700F963B6 /* Assets.xcassets */; };
+		70A10F521E65408700F963B6 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A10F511E65408700F963B6 /* HistoryViewController.swift */; };
+		70A10F541E65409500F963B6 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A10F531E65409500F963B6 /* History.storyboard */; };
+		70A10F561E65466A00F963B6 /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A10F551E65466A00F963B6 /* HistoryViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +41,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		700ACA1B1E65164100C40973 /* Enumerations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		700ACA1D1E65166A00C40973 /* MainViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		700ACA1F1E65196F00C40973 /* HistoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		700ACA211E6526EB00C40973 /* UIImageView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		709512A01E53FD0C005C2234 /* Rock Paper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		709512A31E53FD0C005C2234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		709512A51E53FD0C005C2234 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		709512A51E53FD0C005C2234 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		709512A81E53FD0C005C2234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		709512AA1E53FD0C005C2234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		709512AD1E53FD0C005C2234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		709512AF1E53FD0C005C2234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		709512B41E53FD0C005C2234 /* Rock Paper ScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rock Paper ScissorsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		709512B81E53FD0C005C2234 /* Rock_Paper_ScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_Paper_ScissorsTests.swift; sourceTree = "<group>"; };
+		709512B81E53FD0C005C2234 /* RoShamBoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoShamBoTests.swift; sourceTree = "<group>"; };
 		709512BA1E53FD0C005C2234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		709512BF1E53FD0C005C2234 /* Rock Paper ScissorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rock Paper ScissorsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		709512C31E53FD0C005C2234 /* Rock_Paper_ScissorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_Paper_ScissorsUITests.swift; sourceTree = "<group>"; };
+		709512C31E53FD0C005C2234 /* RoShamBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoShamBoUITests.swift; sourceTree = "<group>"; };
 		709512C51E53FD0C005C2234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70A10F4F1E653C1700F963B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70A10F511E65408700F963B6 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		70A10F531E65409500F963B6 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		70A10F551E65466A00F963B6 /* HistoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +112,17 @@
 			isa = PBXGroup;
 			children = (
 				709512A31E53FD0C005C2234 /* AppDelegate.swift */,
-				709512A51E53FD0C005C2234 /* ViewController.swift */,
+				700ACA1B1E65164100C40973 /* Enumerations.swift */,
+				700ACA1F1E65196F00C40973 /* HistoryItem.swift */,
+				709512A51E53FD0C005C2234 /* MainViewController.swift */,
+				700ACA1D1E65166A00C40973 /* MainViewPresenter.swift */,
 				709512A71E53FD0C005C2234 /* Main.storyboard */,
-				709512AA1E53FD0C005C2234 /* Assets.xcassets */,
+				70A10F511E65408700F963B6 /* HistoryViewController.swift */,
+				70A10F551E65466A00F963B6 /* HistoryViewCell.swift */,
+				70A10F531E65409500F963B6 /* History.storyboard */,
 				709512AC1E53FD0C005C2234 /* LaunchScreen.storyboard */,
+				700ACA211E6526EB00C40973 /* UIImageView+.swift */,
+				70A10F4F1E653C1700F963B6 /* Assets.xcassets */,
 				709512AF1E53FD0C005C2234 /* Info.plist */,
 			);
 			path = "Rock Paper Scissors";
@@ -110,7 +131,7 @@
 		709512B71E53FD0C005C2234 /* Rock Paper ScissorsTests */ = {
 			isa = PBXGroup;
 			children = (
-				709512B81E53FD0C005C2234 /* Rock_Paper_ScissorsTests.swift */,
+				709512B81E53FD0C005C2234 /* RoShamBoTests.swift */,
 				709512BA1E53FD0C005C2234 /* Info.plist */,
 			);
 			path = "Rock Paper ScissorsTests";
@@ -119,7 +140,7 @@
 		709512C21E53FD0C005C2234 /* Rock Paper ScissorsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				709512C31E53FD0C005C2234 /* Rock_Paper_ScissorsUITests.swift */,
+				709512C31E53FD0C005C2234 /* RoShamBoUITests.swift */,
 				709512C51E53FD0C005C2234 /* Info.plist */,
 			);
 			path = "Rock Paper ScissorsUITests";
@@ -233,8 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				709512AE1E53FD0C005C2234 /* LaunchScreen.storyboard in Resources */,
-				709512AB1E53FD0C005C2234 /* Assets.xcassets in Resources */,
+				70A10F501E653C1700F963B6 /* Assets.xcassets in Resources */,
 				709512A91E53FD0C005C2234 /* Main.storyboard in Resources */,
+				70A10F541E65409500F963B6 /* History.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				709512A61E53FD0C005C2234 /* ViewController.swift in Sources */,
+				700ACA221E6526EB00C40973 /* UIImageView+.swift in Sources */,
+				700ACA1C1E65164100C40973 /* Enumerations.swift in Sources */,
+				709512A61E53FD0C005C2234 /* MainViewController.swift in Sources */,
+				700ACA1E1E65166A00C40973 /* MainViewPresenter.swift in Sources */,
+				700ACA201E65196F00C40973 /* HistoryItem.swift in Sources */,
+				70A10F561E65466A00F963B6 /* HistoryViewCell.swift in Sources */,
+				70A10F521E65408700F963B6 /* HistoryViewController.swift in Sources */,
 				709512A41E53FD0C005C2234 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				709512B91E53FD0C005C2234 /* Rock_Paper_ScissorsTests.swift in Sources */,
+				709512B91E53FD0C005C2234 /* RoShamBoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				709512C41E53FD0C005C2234 /* Rock_Paper_ScissorsUITests.swift in Sources */,
+				709512C41E53FD0C005C2234 /* RoShamBoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Rock Paper Scissors/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KenJef.Rock-Paper-Scissors";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KenJef.RoShamBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -426,7 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Rock Paper Scissors/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KenJef.Rock-Paper-Scissors";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KenJef.RoShamBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -505,6 +533,7 @@
 				709512CA1E53FD0C005C2234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		709512CB1E53FD0C005C2234 /* Build configuration list for PBXNativeTarget "Rock Paper ScissorsTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +542,7 @@
 				709512CD1E53FD0C005C2234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		709512CE1E53FD0C005C2234 /* Build configuration list for PBXNativeTarget "Rock Paper ScissorsUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +551,7 @@
 				709512D01E53FD0C005C2234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,6 @@
 //
-//  Rock_Paper_ScissorsUITests.swift
-//  Rock Paper ScissorsUITests
+//  RoShamBoUITests.swift
+//  RoShamBo UITests
 //
 //  Created by Kendall Jefferson on 2/14/17.
 //  Copyright © 2017 Kendall Jefferson. All rights reserved.
