@@ -22,8 +22,15 @@ class MainViewController: UIViewController {
     
     let gameEngine = GameEngine()
     
-    fileprivate let historyStoryboardName = "History"
-    fileprivate let historyViewControllerIdentifier = "historyViewController"
+    var isThrowingDown = false {
+        didSet {
+            rockButton?.isEnabled = !isThrowingDown
+            paperButton?.isEnabled = !isThrowingDown
+            scissorsButton?.isEnabled = !isThrowingDown
+            
+            winnerIsLabel?.alpha = isThrowingDown ? 0 : 1
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +39,6 @@ class MainViewController: UIViewController {
         resetButton.title = GlobalStrings.reset
         
         updateWinTotals()
-        updateThrowDown()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
         updateThrowDown()
     }
     
@@ -50,23 +51,23 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func historyButtonTapped(_ sender: UIBarButtonItem) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: historyStoryboardName, bundle:nil)
-        if let vc = storyBoard.instantiateViewController(withIdentifier: historyViewControllerIdentifier) as? HistoryViewController {
-            vc.history = gameEngine.history
-            navigationController?.pushViewController(vc, animated:true)
-        }
+        Utils.showHistory(navigationController, history: gameEngine.history)
     }
 }
 
 extension MainViewController {
    func reset() {
         gameEngine.reset()
- 
-        playerImageView.reset()
-        computerImageView.reset()
+        resetImages()
     
         updateWinTotals()
         updateThrowDown()
+    }
+    
+    func resetImages() {
+        playerImageView.reset()
+        computerImageView.reset()
+        
     }
     
     func throwDown(_ playerThrow: PlayerThrow?) {
@@ -77,10 +78,9 @@ extension MainViewController {
 
 extension MainViewController {
     func animateThrowDown() {
-        enableThrowButtons(false)
+        isThrowingDown = true
         
-        playerImageView.reset()
-        computerImageView.reset()
+        resetImages()
         
         UIView.transition(with: playerImageView,
                           duration: 0.5,
@@ -104,19 +104,11 @@ extension MainViewController {
                            completion: { _ in self.updateThrowDown() })
         }
         
-        enableThrowButtons(true)
+        isThrowingDown = false
     }
 }
 
 extension MainViewController {
-    func enableThrowButtons(_ isEnabled: Bool) {
-        rockButton.isEnabled = isEnabled
-        paperButton.isEnabled = isEnabled
-        scissorsButton.isEnabled = isEnabled
-        
-        winnerIsLabel.alpha = isEnabled ? 1 : 0
-    }
-    
     func updateWinTotals() {
         playerLabel.text = String(format: GlobalStrings.playerWins, gameEngine.playerWins)
         computerLabel.text = String(format: GlobalStrings.computerWins, gameEngine.computerWins)
