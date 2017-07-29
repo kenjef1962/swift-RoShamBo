@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct GlobalStrings {
+    static let player = "Player: %d"
+    static let computer = "Computer: %d"
+}

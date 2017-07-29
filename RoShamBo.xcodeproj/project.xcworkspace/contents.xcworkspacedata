@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Rock Paper Scissors.xcodeproj">
+      location = "self:/Users/KenJef/Documents/Code Projects/iOS/Udacity/Rock Paper Scissors/RoShamBo.xcodeproj">
    </FileRef>
 </Workspace>
