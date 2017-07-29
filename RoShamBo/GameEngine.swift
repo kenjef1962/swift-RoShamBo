@@ -1,5 +1,5 @@
 //
-//  MainViewPresenter.swift
+//  GameEngine.swift
 //  RoShamBo
 //
 //  Created by Kendall Jefferson on 2/27/17.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MainViewPresenter {
+class GameEngine {
     
     var history: [HistoryItem] = []
     
@@ -22,6 +22,8 @@ class MainViewPresenter {
     var computerWins: Int { get { return history.first?.computerWins ?? 0 } }
     var computerThrow: PlayerThrow { get { return history.first?.computerThrow ?? .none } }
     var computerThrowImage: UIImage? { get { return UIImage(named: "\(computerThrow.name)2") } }
+    
+    var lastThrow: PlayerThrow? = nil
     
     func reset() {
         history.removeAll()
@@ -52,6 +54,13 @@ class MainViewPresenter {
     }
     
     fileprivate func generateThrow() -> PlayerThrow? {
-        return PlayerThrow(rawValue: Int(arc4random_uniform(3)))
-    }
+        var computerThrow = PlayerThrow.random
+
+        while lastThrow == computerThrow {
+            computerThrow = PlayerThrow.random
+        }
+        
+        lastThrow = computerThrow
+        
+        return computerThrow    }
 }

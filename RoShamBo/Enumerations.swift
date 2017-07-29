@@ -17,11 +17,11 @@ enum Player: Int {
         get {
             switch self {
             case .computer:
-                return "computer"
+                return GlobalStrings.computer
             case .player:
-                return "player"
+                return GlobalStrings.player
             case .none:
-                return "none"
+                return GlobalStrings.none
             }
         }
     }
@@ -33,17 +33,23 @@ enum PlayerThrow: Int {
     case scissors
     case none
     
+    static var random: PlayerThrow {
+        get {
+            return PlayerThrow(rawValue: Int(arc4random_uniform(3))) ?? .none
+        }
+    }
+    
     var name: String {
         get {
             switch self {
             case .rock:
-                return "rock"
+                return GlobalStrings.rock
             case .paper:
-                return "paper"
+                return GlobalStrings.paper
             case .scissors:
-                return "scissors"
+                return GlobalStrings.scissors
             case .none:
-                return "none"
+                return GlobalStrings.none
             }
         }
     }

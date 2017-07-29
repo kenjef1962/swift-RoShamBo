@@ -20,6 +20,7 @@ extension UIImageView {
     func reset() {
         self.alpha = 1.0
         self.image = nil
+        self.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         self.setBorder(on: false)
     }
 }

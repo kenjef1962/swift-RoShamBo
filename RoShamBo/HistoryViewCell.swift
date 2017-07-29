@@ -22,17 +22,19 @@ class HistoryViewCell: UITableViewCell {
         
         switch historyItem.winner {
         case .player:
-            resultLabel?.text = "Won"
+            resultLabel?.text = "Win"
             resultLabel?.textColor = .green
-            computerImageView.alpha = 0.25
+            playerImageView.alpha = 1.0
+            computerImageView.alpha = 0.33
         case .computer:
-            resultLabel?.text = "Lost"
+            resultLabel?.text = "Loss"
             resultLabel?.textColor = .red
-            playerImageView.alpha = 0.25
+            playerImageView.alpha = 0.33
+            computerImageView.alpha = 1.0
         case .none:
             resultLabel?.text = "Tie"
-            playerImageView.alpha = 0.5
-            computerImageView.alpha = 0.5
+            playerImageView.alpha = 0.67
+            computerImageView.alpha = 0.67
         }
     }
 }

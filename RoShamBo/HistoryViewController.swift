@@ -16,7 +16,7 @@ class HistoryViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "History"
+        title = GlobalStrings.history
         
         tableView.layoutMargins = UIEdgeInsets.zero         // Used to make sure divider lines run full width
         tableView.separatorInset = UIEdgeInsets.zero        // Used to make sure divider lines run full width
@@ -45,17 +45,13 @@ class HistoryViewController: UITableViewController {
         
         switch historyItem.winner {
         case .player:
-            message = "WON: The player's \(historyItem.playerThrow.name) beat the computer's \(historyItem.computerThrow.name)."
+            message = String(format: GlobalStrings.winDetails, historyItem.playerThrow.name, historyItem.computerThrow.name)
         case .computer:
-            message = "LOST: The player's \(historyItem.playerThrow.name) was beaten by the computer's \(historyItem.computerThrow.name)."
+            message = String(format: GlobalStrings.lossDetails, historyItem.playerThrow.name, historyItem.computerThrow.name)
         case .none:
-            message = "TIE: The player and computer both threw \(historyItem.playerThrow.name)."
+            message = String(format: GlobalStrings.tieDetails, historyItem.playerThrow.name)
         }
         
-        let alert = UIAlertController(title: "RoShamBo", message: message, preferredStyle: .alert)
-        let alertOK = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alert.addAction(alertOK)
-        
-        present(alert, animated: true, completion: nil)
+        Utils.showAlert(self, title: GlobalStrings.appTitle, message: message)
     }
 }

@@ -18,19 +18,27 @@ class MainViewController: UIViewController {
     @IBOutlet weak var playerImageView: UIImageView!
     @IBOutlet weak var computerImageView: UIImageView!
     @IBOutlet weak var resetButton: UIBarButtonItem!
+    @IBOutlet weak var winnerIsLabel: UILabel!
     
-    let presenter = MainViewPresenter()
+    let gameEngine = GameEngine()
     
-    fileprivate let storyboardName = "History"
-    fileprivate let viewControllerIdentifier = "historyViewController"
+    fileprivate let historyStoryboardName = "History"
+    fileprivate let historyViewControllerIdentifier = "historyViewController"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = GlobalStrings.appTitle
+        resetButton.title = GlobalStrings.reset
+        
+        updateWinTotals()
+        updateThrowDown()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateDisplay()
+        
+        updateThrowDown()
     }
     
     @IBAction func throwButtonTapped(_ sender: UIButton) {
@@ -42,78 +50,98 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func historyButtonTapped(_ sender: UIBarButtonItem) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: storyboardName, bundle:nil)
-        if let vc = storyBoard.instantiateViewController(withIdentifier: viewControllerIdentifier) as? HistoryViewController {
-            vc.history = presenter.history
+        let storyBoard : UIStoryboard = UIStoryboard(name: historyStoryboardName, bundle:nil)
+        if let vc = storyBoard.instantiateViewController(withIdentifier: historyViewControllerIdentifier) as? HistoryViewController {
+            vc.history = gameEngine.history
             navigationController?.pushViewController(vc, animated:true)
         }
     }
 }
 
 extension MainViewController {
+   func reset() {
+        gameEngine.reset()
+ 
+        playerImageView.reset()
+        computerImageView.reset()
+    
+        updateWinTotals()
+        updateThrowDown()
+    }
+    
     func throwDown(_ playerThrow: PlayerThrow?) {
-        presenter.throwDown(playerThrow: playerThrow)
+        gameEngine.throwDown(playerThrow: playerThrow)
+        animateThrowDown()
+    }
+}
+
+extension MainViewController {
+    func animateThrowDown() {
+        enableThrowButtons(false)
         
         playerImageView.reset()
         computerImageView.reset()
         
-        enableThrowButtons(false)
-        
-        animateThrowDown()
-    }
-    
-    func animateThrowDown() {
-        playerImageView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-        computerImageView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-        
         UIView.transition(with: playerImageView,
                           duration: 0.5,
                           options: .transitionFlipFromLeft,
-                          animations: { self.playerImageView.image = self.presenter.playerThrowImage },
+                          animations: { self.playerImageView.image = self.gameEngine.playerThrowImage },
                           completion: nil)
         
         UIView.transition(with: computerImageView,
                           duration: 0.5,
                           options: .transitionFlipFromRight,
-                          animations: { self.computerImageView.image = self.presenter.computerThrowImage },
+                          animations: { self.computerImageView.image = self.gameEngine.computerThrowImage },
                           completion: { _ in self.animateWinner() })
     }
     
     func animateWinner() {
-        playerLabel.text = String(format: GlobalStrings.player, presenter.playerWins)
-        computerLabel.text = String(format: GlobalStrings.computer, presenter.computerWins)
+        updateWinTotals()
         
-        if presenter.winner != .none {
+        if gameEngine.winner != .none {
             UIView.animate(withDuration: 0.5,
-                           animations: { self.updateDisplay(scale: 1.25, showBorder: false) },
-                           completion: { _ in self.updateDisplay() })
+                           animations: { self.updateThrowDown(scale: 1.25, showBorder: false) },
+                           completion: { _ in self.updateThrowDown() })
         }
         
         enableThrowButtons(true)
     }
-    
+}
+
+extension MainViewController {
     func enableThrowButtons(_ isEnabled: Bool) {
         rockButton.isEnabled = isEnabled
         paperButton.isEnabled = isEnabled
         scissorsButton.isEnabled = isEnabled
-    }
-    
-    func reset() {
-        presenter.reset()
         
-        playerLabel.text = String(format: GlobalStrings.player, presenter.playerWins)
-        computerLabel.text = String(format: GlobalStrings.computer, presenter.computerWins)
-
-        playerImageView.reset()
-        computerImageView.reset()
+        winnerIsLabel.alpha = isEnabled ? 1 : 0
     }
     
-    func updateDisplay(scale: CGFloat = 1.00, showBorder: Bool = true) {
+    func updateWinTotals() {
+        playerLabel.text = String(format: GlobalStrings.playerWins, gameEngine.playerWins)
+        computerLabel.text = String(format: GlobalStrings.computerWins, gameEngine.computerWins)
+
+        var winnerIsLabelText = GlobalStrings.winnerIs
+
+        switch gameEngine.winner {
+        case .player:
+            winnerIsLabelText += " \(GlobalStrings.player)"
+        case .computer:
+            winnerIsLabelText += " \(GlobalStrings.computer)"
+        default:
+            break
+        }
+        
+        winnerIsLabel.text = winnerIsLabelText
+
+    }
+    
+    func updateThrowDown(scale: CGFloat = 1.00, showBorder: Bool = true) {
         var winnerLabel: UILabel? = nil
         var winnerImageView: UIImageView? = nil
         var loserImageView: UIImageView? = nil
         
-        switch presenter.winner {
+        switch gameEngine.winner {
         case .player:
             winnerLabel = playerLabel
             winnerImageView = playerImageView
