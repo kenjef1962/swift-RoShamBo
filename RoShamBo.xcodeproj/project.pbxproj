@@ -15,8 +15,6 @@
 		709512A41E53FD0C005C2234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709512A31E53FD0C005C2234 /* AppDelegate.swift */; };
 		709512A61E53FD0C005C2234 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709512A51E53FD0C005C2234 /* MainViewController.swift */; };
 		709512A91E53FD0C005C2234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709512A71E53FD0C005C2234 /* Main.storyboard */; };
-		709512B91E53FD0C005C2234 /* RoShamBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709512B81E53FD0C005C2234 /* RoShamBoTests.swift */; };
-		709512C41E53FD0C005C2234 /* RoShamBoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709512C31E53FD0C005C2234 /* RoShamBoUITests.swift */; };
 		70A10F521E65408700F963B6 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A10F511E65408700F963B6 /* HistoryViewController.swift */; };
 		70A10F541E65409500F963B6 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A10F531E65409500F963B6 /* History.storyboard */; };
 		70A10F561E65466A00F963B6 /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A10F551E65466A00F963B6 /* HistoryViewCell.swift */; };
@@ -24,23 +22,6 @@
 		70A10F5E1E666FBF00F963B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A10F5D1E666FBF00F963B6 /* LaunchScreen.storyboard */; };
 		9AAC75771E8AFBBB0032CA4D /* GlobalStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC75761E8AFBBB0032CA4D /* GlobalStrings.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		709512B51E53FD0C005C2234 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 709512981E53FD0C005C2234 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7095129F1E53FD0C005C2234;
-			remoteInfo = "Rock Paper Scissors";
-		};
-		709512C01E53FD0C005C2234 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 709512981E53FD0C005C2234 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7095129F1E53FD0C005C2234;
-			remoteInfo = "Rock Paper Scissors";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		700ACA1B1E65164100C40973 /* Enumerations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
@@ -53,12 +34,6 @@
 		709512A51E53FD0C005C2234 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		709512A81E53FD0C005C2234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		709512AF1E53FD0C005C2234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		709512B41E53FD0C005C2234 /* RoShamBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoShamBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		709512B81E53FD0C005C2234 /* RoShamBoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoShamBoTests.swift; sourceTree = "<group>"; };
-		709512BA1E53FD0C005C2234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		709512BF1E53FD0C005C2234 /* RoShamBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoShamBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		709512C31E53FD0C005C2234 /* RoShamBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoShamBoUITests.swift; sourceTree = "<group>"; };
-		709512C51E53FD0C005C2234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70A10F511E65408700F963B6 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		70A10F531E65409500F963B6 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		70A10F551E65466A00F963B6 /* HistoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
@@ -75,20 +50,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		709512B11E53FD0C005C2234 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		709512BC1E53FD0C005C2234 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,8 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				709512A21E53FD0C005C2234 /* RoShamBo */,
-				709512B71E53FD0C005C2234 /* RoShamBoTests */,
-				709512C21E53FD0C005C2234 /* RoShamBoUITests */,
 				709512A11E53FD0C005C2234 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,8 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				709512A01E53FD0C005C2234 /* RoShamBo.app */,
-				709512B41E53FD0C005C2234 /* RoShamBoTests.xctest */,
-				709512BF1E53FD0C005C2234 /* RoShamBoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,24 +91,6 @@
 			path = RoShamBo;
 			sourceTree = "<group>";
 		};
-		709512B71E53FD0C005C2234 /* RoShamBoTests */ = {
-			isa = PBXGroup;
-			children = (
-				709512B81E53FD0C005C2234 /* RoShamBoTests.swift */,
-				709512BA1E53FD0C005C2234 /* Info.plist */,
-			);
-			path = RoShamBoTests;
-			sourceTree = "<group>";
-		};
-		709512C21E53FD0C005C2234 /* RoShamBoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				709512C31E53FD0C005C2234 /* RoShamBoUITests.swift */,
-				709512C51E53FD0C005C2234 /* Info.plist */,
-			);
-			path = RoShamBoUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,42 +111,6 @@
 			productReference = 709512A01E53FD0C005C2234 /* RoShamBo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		709512B31E53FD0C005C2234 /* RoShamBoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 709512CB1E53FD0C005C2234 /* Build configuration list for PBXNativeTarget "RoShamBoTests" */;
-			buildPhases = (
-				709512B01E53FD0C005C2234 /* Sources */,
-				709512B11E53FD0C005C2234 /* Frameworks */,
-				709512B21E53FD0C005C2234 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				709512B61E53FD0C005C2234 /* PBXTargetDependency */,
-			);
-			name = RoShamBoTests;
-			productName = "Rock Paper ScissorsTests";
-			productReference = 709512B41E53FD0C005C2234 /* RoShamBoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		709512BE1E53FD0C005C2234 /* RoShamBoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 709512CE1E53FD0C005C2234 /* Build configuration list for PBXNativeTarget "RoShamBoUITests" */;
-			buildPhases = (
-				709512BB1E53FD0C005C2234 /* Sources */,
-				709512BC1E53FD0C005C2234 /* Frameworks */,
-				709512BD1E53FD0C005C2234 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				709512C11E53FD0C005C2234 /* PBXTargetDependency */,
-			);
-			name = RoShamBoUITests;
-			productName = "Rock Paper ScissorsUITests";
-			productReference = 709512BF1E53FD0C005C2234 /* RoShamBoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,32 +118,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Kendall Jefferson";
 				TargetAttributes = {
 					7095129F1E53FD0C005C2234 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = JTPDJ9JCYN;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1150;
 						ProvisioningStyle = Automatic;
-					};
-					709512B31E53FD0C005C2234 = {
-						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 7095129F1E53FD0C005C2234;
-					};
-					709512BE1E53FD0C005C2234 = {
-						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 7095129F1E53FD0C005C2234;
 					};
 				};
 			};
 			buildConfigurationList = 7095129B1E53FD0C005C2234 /* Build configuration list for PBXProject "RoShamBo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -252,8 +143,6 @@
 			projectRoot = "";
 			targets = (
 				7095129F1E53FD0C005C2234 /* RoShamBo */,
-				709512B31E53FD0C005C2234 /* RoShamBoTests */,
-				709512BE1E53FD0C005C2234 /* RoShamBoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,20 +156,6 @@
 				70A10F5E1E666FBF00F963B6 /* LaunchScreen.storyboard in Resources */,
 				70A10F5C1E665C5000F963B6 /* Assets.xcassets in Resources */,
 				70A10F541E65409500F963B6 /* History.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		709512B21E53FD0C005C2234 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		709512BD1E53FD0C005C2234 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,36 +179,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		709512B01E53FD0C005C2234 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				709512B91E53FD0C005C2234 /* RoShamBoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		709512BB1E53FD0C005C2234 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				709512C41E53FD0C005C2234 /* RoShamBoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		709512B61E53FD0C005C2234 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7095129F1E53FD0C005C2234 /* RoShamBo */;
-			targetProxy = 709512B51E53FD0C005C2234 /* PBXContainerItemProxy */;
-		};
-		709512C11E53FD0C005C2234 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7095129F1E53FD0C005C2234 /* RoShamBo */;
-			targetProxy = 709512C01E53FD0C005C2234 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		709512A71E53FD0C005C2234 /* Main.storyboard */ = {
@@ -351,6 +197,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -360,6 +207,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -367,6 +215,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -407,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -416,6 +266,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -423,6 +274,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -462,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.KenJef.RoShamBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -477,66 +329,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.KenJef.RoShamBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		709512CC1E53FD0C005C2234 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = RoShamBoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KenJef.RoShamBoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoShamBo.app/RoShamBo";
-			};
-			name = Debug;
-		};
-		709512CD1E53FD0C005C2234 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = RoShamBoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KenJef.RoShamBoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoShamBo.app/RoShamBo";
-			};
-			name = Release;
-		};
-		709512CF1E53FD0C005C2234 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = RoShamBoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KenJef.RoShamBoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = RoShamBo;
-			};
-			name = Debug;
-		};
-		709512D01E53FD0C005C2234 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = RoShamBoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KenJef.RoShamBoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = RoShamBo;
 			};
 			name = Release;
 		};
@@ -557,24 +351,6 @@
 			buildConfigurations = (
 				709512C91E53FD0C005C2234 /* Debug */,
 				709512CA1E53FD0C005C2234 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		709512CB1E53FD0C005C2234 /* Build configuration list for PBXNativeTarget "RoShamBoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				709512CC1E53FD0C005C2234 /* Debug */,
-				709512CD1E53FD0C005C2234 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		709512CE1E53FD0C005C2234 /* Build configuration list for PBXNativeTarget "RoShamBoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				709512CF1E53FD0C005C2234 /* Debug */,
-				709512D01E53FD0C005C2234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
